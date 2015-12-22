@@ -153,5 +153,5 @@ function tf_disable_dashboard_widgets() {
 add_action('admin_menu', 'tf_disable_dashboard_widgets');
 
 // dequeue Jetpack's 'devicepx' script (which is totally unneccesary and is a blocking script)
-function remove_devicepx() { wp_dequeue_script('devicepx'); }
-add_action('wp_enqueue_scripts', 'remove_devicepx');
+function remove_jetpack_devicepx() { wp_dequeue_script('devicepx'); }
+add_action('wp_enqueue_scripts', 'remove_jetpack_devicepx', 20);
