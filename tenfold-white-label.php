@@ -1,6 +1,6 @@
 <?php
 /******************************************************************
-Plugin Name:       Tenfold Media
+Plugin Name:       Tenfold White Label
 Plugin URI:        http://tenfold.media
 Description:       This plugin customises WordPress for Tenfold Media clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
 Author:            Tim Rye
