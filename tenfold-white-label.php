@@ -5,7 +5,7 @@ Plugin URI:        http://tenfold.media
 Description:       This plugin customises WordPress for Tenfold Media clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
 Author:            Tim Rye
 Author URI:        http://tenfold.media/tim
-Version:           1.0.1
+Version:           1.0.2
 GitHub Plugin URI: TenfoldMedia/tenfold-white-label
 GitHub Branch:     master
 ******************************************************************/
