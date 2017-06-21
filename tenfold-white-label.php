@@ -5,7 +5,7 @@ Plugin URI:        https://tenfold.co.uk
 Description:       This plugin customises WordPress for Tenfold clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
 Author:            Tim Rye
 Author URI:        https://tenfold.co.uk/tim
-Version:           1.0.3
+Version:           1.0.4
 GitHub Plugin URI: TenfoldMedia/tenfold-white-label
 GitHub Branch:     master
 ******************************************************************/
@@ -54,10 +54,6 @@ CUSTOMISE ADMIN AREA
 // Custom Backend Footer
 function tf_custom_admin_footer() { echo '<span id="footer-thankyou">Website by <a href="https://tenfold.co.uk" target="_blank">Tenfold</a></span>.'; }
 add_filter('admin_footer_text', 'tf_custom_admin_footer');
-
-// Remove the ' - Wordpress' from the page title
-function tf_admin_title($admin_title, $title) { return $title.'|'.$admin_title; }
-add_filter('admin_title', 'tf_admin_title', 10, 2);
 
 // Remove the WordPress logo from the admin bar
 function tf_remove_admin_bar_wp_logo() { global $wp_admin_bar; $wp_admin_bar->remove_menu('wp-logo'); }
