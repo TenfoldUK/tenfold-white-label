@@ -5,7 +5,7 @@ Plugin URI:        https://tenfold.co.uk
 Description:       This plugin customises WordPress for Tenfold clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
 Author:            Tim Rye
 Author URI:        https://tenfold.co.uk/tim
-Version:           1.0.4
+Version:           1.0.5
 GitHub Plugin URI: TenfoldMedia/tenfold-white-label
 GitHub Branch:     master
 ******************************************************************/
@@ -22,6 +22,7 @@ function tf_custom_login_logo() { ?>
 			width: 320px;
 			height: 146px;
 			background: url(<?php echo plugins_url('login-logo.png', __FILE__) ?>) no-repeat top center;
+			background-size: cover;
 		}
 		#wp-submit {
 			background: #d72020;
