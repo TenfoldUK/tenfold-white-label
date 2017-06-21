@@ -1,11 +1,11 @@
 <?php
 /******************************************************************
 Plugin Name:       Tenfold White Label
-Plugin URI:        http://tenfold.media
-Description:       This plugin customises WordPress for Tenfold Media clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
+Plugin URI:        https://tenfold.co.uk
+Description:       This plugin customises WordPress for Tenfold clients, adding features, cleaning up unneccesary things and generally improving WordPress. Make sure the plugin 'GitHub Updater' is activated to recieve updates to this plugin.
 Author:            Tim Rye
-Author URI:        http://tenfold.media/tim
-Version:           1.0.2
+Author URI:        https://tenfold.co.uk/tim
+Version:           1.0.3
 GitHub Plugin URI: TenfoldMedia/tenfold-white-label
 GitHub Branch:     master
 ******************************************************************/
@@ -35,11 +35,11 @@ function tf_custom_login_logo() { ?>
 add_action('login_head', 'tf_custom_login_logo');
 
 // changing the logo link from wordpress.org to our site
-function tf_login_url() { return 'http://www.tenfold.media'; }
+function tf_login_url() { return 'https://tenfold.co.uk'; }
 add_filter('login_headerurl', 'tf_login_url');
 
 // changing the alt text on the logo to show our name
-function tf_login_title() { return 'Website by Tenfold Media'; }
+function tf_login_title() { return 'Website by Tenfold'; }
 add_filter('login_headertitle', 'tf_login_title');
 
 // set 'remember me' to checked
@@ -52,7 +52,7 @@ CUSTOMISE ADMIN AREA
 *********************/
 
 // Custom Backend Footer
-function tf_custom_admin_footer() { echo '<span id="footer-thankyou">Website by <a href="http://www.tenfold.media" target="_blank">Tenfold Media</a></span>.'; }
+function tf_custom_admin_footer() { echo '<span id="footer-thankyou">Website by <a href="https://tenfold.co.uk" target="_blank">Tenfold</a></span>.'; }
 add_filter('admin_footer_text', 'tf_custom_admin_footer');
 
 // Remove the ' - Wordpress' from the page title
